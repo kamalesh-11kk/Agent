@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasagent - AI Agent Platform</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Hasagent</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-on-scroll">Supercharge Your Data with Hasagent</h1>
+                    <p class="animate-on-scroll">Leverage the power of AI to transform your data operations with our specialized agents</p>
+                    <a href="#free-trial" class="btn primary-btn animate-on-scroll">Start Free Trial</a>
+                </div>
+                <div class="hero-image animate-on-scroll">
+                    <img src="ai-hero.svg" alt="AI Brain Visualization" class="ai-hero-img">
+                </div>
+            </div>
+            <div class="hero-particles" id="particles"></div>
+        </section>
+
+        <!-- Agents Overview -->
+        <section class="agents-overview">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Our AI Agents</h2>
+                <div class="agents-grid">
+                    <div class="agent-card animate-on-scroll">
+                        <div class="agent-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Science Agent</h3>
+                        <p>Build predictive models and extract insights from your data</p>
+                    </div>
+                    <div class="agent-card animate-on-scroll">
+                        <div class="agent-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Analysis Agent</h3>
+                        <p>Analyze complex datasets and visualize key patterns</p>
+                    </div>
+                    <div class="agent-card animate-on-scroll">
+                        <div class="agent-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Data Engineering Agent</h3>
+                        <p>Automate data pipelines and optimize data infrastructure</p>
+                    </div>
+                </div>
+                <div class="cta-center">
+                    <a href="#agents" class="btn secondary-btn animate-on-scroll">Learn More About Our Agents</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Trial Section -->
+        <section id="free-trial" class="free-trial">
+            <div class="container">
+                <div class="trial-content">
+                    <h2 class="section-title animate-on-scroll">Start Your Free Trial Today</h2>
+                    <p class="animate-on-scroll">Experience the power of our AI agents with a 14-day free trial. No credit card required.</p>
+                </div>
+                <div class="trial-form animate-on-scroll">
+                    <form id="trialForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="useCase">Use Case</label>
+                            <textarea id="useCase" name="useCase" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Activate My Free Trial</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agents Section -->
+        <section id="agents" class="agents">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Our AI Agents</h2>
+                <div class="agents-container">
+                    <!-- Data Science Agent -->
+                    <div class="agent-detailed-card animate-on-scroll">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Data Science Agent</h3>
+                        </div>
+                        <div class="agent-body">
+                            <p>Our Data Science Agent helps you build predictive models, perform statistical analysis, and extract valuable insights from your data.</p>
+                            <ul class="agent-features">
+                                <li><i class="fas fa-check"></i> Automated machine learning model creation</li>
+                                <li><i class="fas fa-check"></i> Feature engineering and selection</li>
+                                <li><i class="fas fa-check"></i> Model evaluation and optimization</li>
+                                <li><i class="fas fa-check"></i> Natural language processing capabilities</li>
+                            </ul>
+                        </div>
+                        <div class="agent-footer">
+                            <button class="btn secondary-btn learn-more" data-agent="data-science">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis Agent -->
+                    <div class="agent-detailed-card animate-on-scroll">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Data Analysis Agent</h3>
+                        </div>
+                        <div class="agent-body">
+                            <p>Our Data Analysis Agent helps you analyze complex datasets, create insightful visualizations, and uncover hidden patterns in your data.</p>
+                            <ul class="agent-features">
+                                <li><i class="fas fa-check"></i> Automated data cleaning and preprocessing</li>
+                                <li><i class="fas fa-check"></i> Advanced statistical analysis</li>
+                                <li><i class="fas fa-check"></i> Interactive data visualization</li>
+                                <li><i class="fas fa-check"></i> Anomaly detection and pattern recognition</li>
+                            </ul>
+                        </div>
+                        <div class="agent-footer">
+                            <button class="btn secondary-btn learn-more" data-agent="data-analysis">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Data Engineering Agent -->
+                    <div class="agent-detailed-card animate-on-scroll">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Data Engineering Agent</h3>
+                        </div>
+                        <div class="agent-body">
+                            <p>Our Data Engineering Agent helps you automate data pipelines, optimize data infrastructure, and ensure data quality and reliability.</p>
+                            <ul class="agent-features">
+                                <li><i class="fas fa-check"></i> Automated ETL pipeline creation</li>
+                                <li><i class="fas fa-check"></i> Data quality monitoring and validation</li>
+                                <li><i class="fas fa-check"></i> Database optimization and management</li>
+                                <li><i class="fas fa-check"></i> Data integration across multiple sources</li>
+                            </ul>
+                        </div>
+                        <div class="agent-footer">
+                            <button class="btn secondary-btn learn-more" data-agent="data-engineering">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent Modal -->
+            <div class="modal" id="agentModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Pricing Plans</h2>
+                <div class="pricing-grid">
+                    <!-- Basic Plan -->
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-header">
+                            <h3>Basic</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">49</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Access to 1 AI Agent</li>
+                                <li><i class="fas fa-check"></i> 100 queries per day</li>
+                                <li><i class="fas fa-check"></i> Basic analytics dashboard</li>
+                                <li><i class="fas fa-check"></i> Email support</li>
+                                <li class="disabled"><i class="fas fa-times"></i> Custom integrations</li>
+                                <li class="disabled"><i class="fas fa-times"></i> Advanced features</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#free-trial" class="btn primary-btn">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="pricing-card featured animate-on-scroll">
+                        <div class="pricing-header">
+                            <h3>Pro</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Access to all 3 AI Agents</li>
+                                <li><i class="fas fa-check"></i> 500 queries per day</li>
+                                <li><i class="fas fa-check"></i> Advanced analytics dashboard</li>
+                                <li><i class="fas fa-check"></i> Priority email & chat support</li>
+                                <li><i class="fas fa-check"></i> Basic integrations</li>
+                                <li class="disabled"><i class="fas fa-times"></i> Custom solutions</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#free-trial" class="btn primary-btn">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">249</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Access to all 3 AI Agents</li>
+                                <li><i class="fas fa-check"></i> Unlimited queries</li>
+                                <li><i class="fas fa-check"></i> Custom analytics dashboard</li>
+                                <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+                                <li><i class="fas fa-check"></i> Custom integrations</li>
+                                <li><i class="fas fa-check"></i> Custom solutions</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#free-trial" class="btn primary-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@hasagent.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 AI Street, Tech City, TC 12345</p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Hasagent</h2>
+                    <p>Supercharge Your Data with AI</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Hasagent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <span class="close-modal">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your free trial has been activated. Check your email for login details.</p>
+            <button class="btn primary-btn close-success">Got it</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

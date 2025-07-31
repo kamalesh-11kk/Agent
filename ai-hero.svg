@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3914af" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1241ab" stop-opacity="0.8" />
+    </linearGradient>
+    
+    <linearGradient id="circuit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3" />
+    </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Main circular background -->
+  <circle cx="250" cy="250" r="200" fill="url(#bg-gradient)" />
+  
+  <!-- Brain outline -->
+  <path d="M250,120 C180,120 150,180 150,230 C150,280 180,320 250,320 C320,320 350,280 350,230 C350,180 320,120 250,120 Z" 
+        fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" />
+  
+  <!-- Brain details -->
+  <path d="M250,140 C200,140 170,180 170,230 C170,280 200,300 250,300 C300,300 330,280 330,230 C330,180 300,140 250,140 Z" 
+        fill="none" stroke="white" stroke-width="2" stroke-opacity="0.5" />
+  
+  <!-- Left hemisphere details -->
+  <path d="M250,160 C220,160 190,180 190,230 C190,260 210,280 250,280" 
+        fill="none" stroke="white" stroke-width="2" stroke-opacity="0.5" />
+  
+  <!-- Right hemisphere details -->
+  <path d="M250,160 C280,160 310,180 310,230 C310,260 290,280 250,280" 
+        fill="none" stroke="white" stroke-width="2" stroke-opacity="0.5" />
+  
+  <!-- Circuit patterns -->
+  <g stroke="url(#circuit-gradient)" stroke-width="1.5">
+    <!-- Horizontal lines -->
+    <line x1="150" y1="200" x2="350" y2="200" />
+    <line x1="170" y1="240" x2="330" y2="240" />
+    <line x1="190" y1="280" x2="310" y2="280" />
+    
+    <!-- Vertical lines -->
+    <line x1="200" y1="150" x2="200" y2="300" />
+    <line x1="250" y1="120" x2="250" y2="320" />
+    <line x1="300" y1="150" x2="300" y2="300" />
+    
+    <!-- Connection dots -->
+    <circle cx="200" cy="200" r="4" fill="white" />
+    <circle cx="200" cy="240" r="4" fill="white" />
+    <circle cx="200" cy="280" r="4" fill="white" />
+    
+    <circle cx="250" cy="200" r="4" fill="white" />
+    <circle cx="250" cy="240" r="4" fill="white" />
+    <circle cx="250" cy="280" r="4" fill="white" />
+    
+    <circle cx="300" cy="200" r="4" fill="white" />
+    <circle cx="300" cy="240" r="4" fill="white" />
+    <circle cx="300" cy="280" r="4" fill="white" />
+  </g>
+  
+  <!-- Glowing nodes -->
+  <g filter="url(#glow)">
+    <circle cx="200" cy="200" r="6" fill="#ffffff" />
+    <circle cx="300" cy="240" r="6" fill="#ffffff" />
+    <circle cx="250" cy="280" r="6" fill="#ffffff" />
+  </g>
+  
+  <!-- Data flow animations -->
+  <g>
+    <circle cx="200" cy="200" r="3" fill="#ffffff">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="200" r="3" fill="#ffffff">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="200" r="3" fill="#ffffff">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="200" cy="240" r="3" fill="#ffffff">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="240" r="3" fill="#ffffff">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="240" r="3" fill="#ffffff">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Pulse animation -->
+  <circle cx="250" cy="250" r="150" fill="none" stroke="white" stroke-width="2" stroke-opacity="0.3">
+    <animate attributeName="r" values="150;170;150" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="stroke-opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite" />
+  </circle>
+</svg>
